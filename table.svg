@@ -1,42 +1,38 @@
-
-		
+<svg viewBox="0 0 800 200" width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
 		<style>
-			body {
-				background: #e3f2fd
+			@keyframes hi  {
+            			0% { transform: rotate( 0.0deg) }
+           			10% { transform: rotate(14.0deg) }
+           			20% { transform: rotate(-8.0deg) }
+           			30% { transform: rotate(14.0deg) }
+           			40% { transform: rotate(-4.0deg) }
+           			50% { transform: rotate(10.0deg) }
+           			60% { transform: rotate( 0.0deg) }
+          			100% { transform: rotate( 0.0deg) }
+        		}
+			.hi {
+	          		animation: hi 1.5s linear -0.5s infinite;
+        	  		display: inline-block;
+          			transform-origin: 70% 70%;
+        		}
+			.container {
+			 	width: 100%;
+          			height: 200px;
+
+				display: flex;
+				color: white;
 			}
 
-			svg {
-				font-family: 'Russo One', sans-serif;
-				position: absolute; 
-				width: 100%; height: 100%;
-			}
-			svg text {
-				text-transform: uppercase;
-				animation: stroke 5s infinite alternate;
-				stroke-width: 2;
-				stroke: #365fa0;
-				font-size: 140px;
-			}
-			@keyframes stroke {
-				0%   {
-					fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
-					stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-				}
-				70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
-				80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
-				100% {
-					fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
-					stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-				}
-			}
 		</style>
-			
-		
-			<svg viewBox="0 0 1320 300">
-				<text x="50%" y="50%" dy=".35em" text-anchor="middle">
-				webstoryboy
-				</text>
-			</svg>	
+	
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div class="container">
+				<div class="hi">👋</div>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
 			
 				
 
