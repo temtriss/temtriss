@@ -58,6 +58,17 @@
           transform-origin: 70% 70%;
         }
 
+        @keyframes hellotext  {
+            0% { position: 0% 50%;}
+            50% {position: 100% 50%;}
+            100% {position: 0% 50%; .container { align-items: lefg;}            }
+        }
+        
+        .hellotext {
+            animation: hellotext 1.5s linear -0.5s
+            display: inline-block;
+        }
+
         @media (prefers-color-scheme: light) {
           .container {
             --color-main: #ffc8dd;
@@ -66,10 +77,14 @@
             --color-tertiary: #a2d2ff;
           }
         }
-      </style>
 
+
+
+        
+      </style>
+      
       <div class="container">
-        <h1>Hi there, my name is Wi11ka <div class="hi">👋</div></h1>
+        <div class="hellotext">Hi there, my name is Wi11ka</div> <div class="hi">👋</div>
       </div>
     </div>
   </foreignObject>
